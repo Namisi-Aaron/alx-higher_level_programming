@@ -1,1 +1,1 @@
-This is a repository containing ALX tasks for hihger level programming languages like Python
+This is a repository containing ALX tasks for higher level programming languages like Python
