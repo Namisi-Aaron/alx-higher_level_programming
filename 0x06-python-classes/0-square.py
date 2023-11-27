@@ -1,10 +1,21 @@
 #!/usr/bin/python3
 class Square:
-    """
-    Module:
-        This module contains the class square
+    """This is an empty class Square.
 
-    Class:
-        This is an empty class that defines a square
+    The class Square contains an empty
+    declaration
+
+    Attributes:
+        None defined yet
+
+    Args:
+        No arguments have been defined yet
+
+    Raises:
+        No raises are defined for this class
+
+    Methods:
+        No methods are defined for this class yet
+
     """
     pass
