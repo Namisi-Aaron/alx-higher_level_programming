@@ -2,10 +2,10 @@
 """This module creates a class Rectangle"""
 class Rectangle:
     """This is a class Rectangle"""
-    
+
     def __init__(self, width=0, height=0):
         """The __init__ method
-        
+
         Attributes:
             width: the width of the rectangle.
             height: the height of the rectangle
@@ -38,11 +38,11 @@ class Rectangle:
         if value < 0:
             raise ValueError('height must be >= 0')
         self.__height = value
-    
+
     def area(self):
         """Returns the rectangle's area"""
         return self.__height * self.__width
-        
+
     def perimeter(self):
         """Returns the perimeter of the rectangle"""
         if self.__height == 0 or self.__width == 0:
@@ -52,7 +52,7 @@ class Rectangle:
 
     def __str__(self):
         rect_string = ''
-        if self__height == 0 or self.__width == 0:
+        if self.__height == 0 or self.__width == 0:
             return ''
         else:
             for i in range(0, self.__height):
