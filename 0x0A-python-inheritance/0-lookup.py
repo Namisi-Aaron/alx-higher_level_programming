@@ -2,7 +2,11 @@
 """This module defines a function lookup"""
 
 def lookup(obj):
-    """lookup returns the list of available
-    attributes and methods of an object"""
+    """returns the list of available
+    attributes and methods of an object
+
+    Args:
+        obj: the object to be checked
+    """
 
     return dir(obj)
