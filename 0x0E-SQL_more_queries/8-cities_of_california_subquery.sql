@@ -6,4 +6,5 @@ FROM
 cities, states
 WHERE
 cities.state_id = states.id
+AND states.id = 1
 ORDER BY cities.id
