@@ -1,9 +1,21 @@
-import unittest
-add_integer = __import__('../0-add_integer').add_integer
-
-class TestAdd(unittest.TestCase):
-	def test_add(self):
-		self.assertEqual(add_integer.add_integer(1, 2), 3)
-
-if __name__ == '__main__':
-	unittest.main()
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> print(add_integer(1, 2))
+3
+>>> print(add_integer(100, -2))
+98
+>>> print(add_integer(2))
+100
+>>> print(add_integer(100.3, -2))
+98
+>>> try:
+...     print(add_integer(4, "School"))
+... except Exception as e:
+...     print(e)
+...
+b must be an integer
+>>> try:
+...     print(add_integer(None))
+... except Exception as e:
+...     print(e)
+... 
+a must be an integer
