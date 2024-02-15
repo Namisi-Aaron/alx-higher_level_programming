@@ -1,11 +1,11 @@
 #!/usr/bin/node
-const array = process.argv.slice(2);
+const array = process.argv.slice(2).map(Number);
 if (array.length === 0 || array.length < 2) {
-  console.log('0');
+  console.log(0);
 } else {
-  let largest = array[0];
-  let secondLargest = array[0];
-  let i = 1;
+  let largest = Math.max(array[0], array[1]);
+  let secondLargest = Math.min(array[0], array[1]);
+  let i = 2;
   for (; i < array.length; i++) {
     if (array[i] > largest) {
       secondLargest = largest;
