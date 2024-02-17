@@ -20,7 +20,7 @@ if __name__ == "__main__":
     name = sys.argv[4]
     cur = db.cursor()
     cur.execute("SELECT * FROM states\
-            WHERE name = %s\
+            WHERE name = '%s'\
             ORDER BY id", (name,))
     rows = cur.fetchall()
     for row in rows:
