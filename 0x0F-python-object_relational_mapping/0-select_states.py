@@ -2,8 +2,19 @@
 import sys
 import MySQLdb
 
+"""This script lists all states from the database hbtn_0e_0_usa"""
+
 
 def dbConnect(username, password, database):
+    """"Connects to a database.
+
+    Args:
+        username: the database user.
+        password: the users password
+
+    Returns:
+        The connection instance.
+    """
     try:
         connection = MySQLdb.connect(
                 user=username,
