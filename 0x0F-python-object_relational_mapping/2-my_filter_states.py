@@ -17,11 +17,10 @@ if __name__ == "__main__":
             passwd=sys.argv[2],
             db=sys.argv[3]
             )
-    name = sys.argv[4]
     cur = db.cursor()
     cur.execute("SELECT * FROM states\
-            WHERE name = '%s'\
-            ORDER BY id", (name,))
+            WHERE name = '{}'\
+            ORDER BY id".format(sys.argv[4]))
     rows = cur.fetchall()
     for row in rows:
         print(row)
