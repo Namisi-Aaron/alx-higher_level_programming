@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-"""This module lists all states with a name starting with N
-from database hbtn_0e_0_usa"""
+"""
+This module lists all states with a name starting with N
+from database hbtn_0e_0_usa
+"""
 
 import sys
 import MySQLdb
