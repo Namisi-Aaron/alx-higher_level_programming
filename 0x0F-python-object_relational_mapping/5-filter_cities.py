@@ -17,9 +17,10 @@ if __name__ == "__main__":
             )
     state_name = sys.argv[4]
     cur = db.cursor()
-    cur.execute("SELECT cities.id, cities.name, states.name\
+    cur.execute("SELECT cities.name\
             FROM states, cities\
             WHERE states.id = cities.state_id\
+            AND states.name = %s\
             ORDER BY cities.id", (state_name,))
     rows = cur.fetchall()
     print(', '.join(map(str, rows)))
