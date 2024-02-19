@@ -22,6 +22,5 @@ if __name__ == "__main__":
             WHERE states.id = cities.state_id\
             ORDER BY cities.id", (state_name,))
     rows = cur.fetchall()
-    for row in rows:
-        print(row)
+    print(', '.join(map(str, rows)))
     db.close()
