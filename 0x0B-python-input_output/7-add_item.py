@@ -14,3 +14,4 @@ else:
     for arg in sys.argv[1:]:
         my_list.append(arg)
     save_to_json_file(my_list, "add_item.json")
+
