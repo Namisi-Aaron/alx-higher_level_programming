@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""write_file module"""
-def write_file(filename="", text=""):
-    """This module writes a string text
-    and returns the number of characters written"""
+"""Contains the function write_file"""
 
-    with open(filename, 'w', encoding="utf-8") as myFile:
-        return myFile.write(text)
+
+def write_file(filename="", text=""):
+    """Writes a string to a text file"""
+    with open(filename, 'w', encoding='utf-8') as f:
+        return f.write(text)

@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-"""6-base_geometry module"""
+"""Defines the class BaseGeometry"""
+
+
 class BaseGeometry:
-    """BaseGeometry class docstring"""
+    """Is an empty class"""
+    def __init__(self):
+        pass
+
     def area(self):
-        """Raises an exception"""
-        raise Exception('area() is not implemented')
+        raise Exception("area() is not implemented")

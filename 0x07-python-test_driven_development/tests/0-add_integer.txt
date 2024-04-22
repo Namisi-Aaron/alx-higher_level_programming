@@ -3,19 +3,25 @@
 3
 >>> print(add_integer(100, -2))
 98
->>> print(add_integer(2))
-100
 >>> print(add_integer(100.3, -2))
 98
->>> try:
-...     print(add_integer(4, "School"))
-... except Exception as e:
-...     print(e)
-...
-b must be an integer
->>> try:
-...     print(add_integer(None))
-... except Exception as e:
-...     print(e)
-... 
-a must be an integer
+>>> print(add_integer(2))
+100
+>>> print(add_integer(4, "School"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 12, in add_integer
+    raise TypeError('b must be an integer')
+TypeError: b must be an integer
+>>> print(add_integer(None))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 7, in add_integer
+    raise TypeError('a must be an integer')
+TypeError: a must be an integer
+>>> print(add_integer(1, "2"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 17, in add_integer
+    raise TypeError('b must be an integer')
+TypeError: b must be an integer
