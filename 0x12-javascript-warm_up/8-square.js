@@ -1,18 +1,16 @@
 #!/usr/bin/node
-let size;
-let square = '';
-if (isNaN(Number(process.argv[2]))) {
+if (isNaN(Number(process.argv[2])) || process.argv[2] === undefined) {
   console.log('Missing size');
 } else {
-  size = Number(process.argv[2]);
-
-  for (let i = 0; i < size; i++) {
-    for (let j = 0; j < size; j++) {
-      square += 'X';
-      }
-      if (i < size - 1) {
-        square += '\n';
-      }
+  let sq = '';
+  const size = process.argv[2];
+  for (let x = 0; x < size; x++) {
+    for (let y = 0; y < size; y++) {
+      sq += 'X';
     }
+    if (x !== size - 1) {
+      sq += '\n';
+    }
+  }
+  console.log(sq);
 }
-console.log(square);
