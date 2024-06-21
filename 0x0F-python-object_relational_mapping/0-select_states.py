@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+from sys import argv
+import MySQLdb
 if __name__ == "__main__":
-    from sys import argv
-    import MySQLdb
     username = argv[1]
     database_name = argv[3]
     password = argv[2]
