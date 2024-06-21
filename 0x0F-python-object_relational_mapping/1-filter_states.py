@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""This script lists all states with a name
+    starting with 'N'"""
 if __name__ == "__main__":
     from sys import argv
     import MySQLdb
