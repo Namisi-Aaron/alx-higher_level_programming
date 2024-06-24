@@ -10,7 +10,7 @@ if __name__ == "__main__":
     username = argv[1]
     password = argv[2]
     dbname = argv[3]
-    name = argv[4]
+    state_name = argv[4]
     connection = 'mysql://{}:{}@localhost:3306/{}'.format(username,
                                                           password,
                                                           dbname)
@@ -20,9 +20,9 @@ if __name__ == "__main__":
     session = Session()
 
     state = session.query(State) \
-                   .filter(State.name.like(name)) \
+                   .filter(State.name == state_name) \
                    .order_by(State.id) \
-                   .all()
+                   .one_or_none()
     if state:
         print('{}'.format(state.id))
     else:
