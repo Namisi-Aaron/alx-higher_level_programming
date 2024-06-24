@@ -22,7 +22,7 @@ if __name__ == "__main__":
     state = session.query(State) \
                    .filter(State.name.like(name)) \
                    .order_by(State.id) \
-                   .one()
+                   .all()
     if state:
         print('{}'.format(state.id))
     else:
