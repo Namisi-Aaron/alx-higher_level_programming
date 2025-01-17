@@ -1,0 +1,1 @@
+This repository contains ALX SE code for higher level programming languages like Python and Javascript.
