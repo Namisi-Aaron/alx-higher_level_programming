@@ -1,0 +1,1 @@
+This directory contains files for ALX SE project 0x01. Python - if/else, loops, functions
