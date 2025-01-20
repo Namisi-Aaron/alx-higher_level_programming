@@ -2,18 +2,21 @@
 import random
 number = random.randint(-10000, 10000)
 
+
 def is_positive(number):
     if number > 0:
-        return True 
+        return True
     else:
         return False
-    
+
+
 def is_greater(num):
     if num > 5:
         return True
     else:
         return False
-    
+
+
 sign = is_positive(number)
 num = abs(number) % 10
 
