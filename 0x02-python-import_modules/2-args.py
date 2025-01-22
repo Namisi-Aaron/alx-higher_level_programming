@@ -11,5 +11,5 @@ else:
 for i in range(num_of_arguments):
     print(f"{i + 1}: {argv[i + 1]}")
 
-if __name__ == "__main__":
+if __name__ != "__main__":
     main()
