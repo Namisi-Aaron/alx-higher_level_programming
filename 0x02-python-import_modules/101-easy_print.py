@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-(lambda x: print(x))("#pythoniscool")
+__import__('builtins').exec('print("#pythoniscool")')
